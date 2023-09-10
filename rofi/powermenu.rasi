@@ -1,0 +1,120 @@
+configuration {
+    font:                           "JetBrainsMono Nerd Font Regular 10";
+    show-icons:                     false;
+    icon-theme: 		                "Numix-Square";
+    scroll-method:                  0;
+    disable-history:                false;
+    sidebar-mode: 		              false;
+}
+
+window {
+    background-color:               #282828;
+    border-color:                   #928374;
+    border:                         1;
+    padding:                        10;
+    transparency:                   "real";
+    width:                          180px;
+    location:                       northwest;
+    y-offset:                       65;
+    x-offset:	                      20;
+}
+listview {
+    lines:                          6;
+    columns:                        1;
+    scrollbar:			                false;
+}
+element {
+    border:  0;
+    padding: 1px ;
+}
+/*
+element-text {
+    background-color: #282828;
+    text-color:       #ebdbb2;
+}
+*/
+
+element.normal.normal {
+    background-color: #282828;
+    text-color:       #ebdbb2;
+}
+element.normal.urgent {
+    background-color: #282828;
+    text-color:       #fb4934;
+}
+element.normal.active {
+    background-color: #282828;
+    text-color:       #ebdbb2;
+}
+element.selected.normal {
+    background-color: #504945;
+    text-color:       #ebdbb2;
+}
+element.selected.urgent {
+    background-color: #504945;
+    text-color:       #fb4934;
+}
+element.selected.active {
+    background-color: #504945;
+    text-color:       #83a598;
+}
+element.alternate.normal {
+    background-color: #282828;
+    text-color:       #ebdbb2;
+}
+element.alternate.urgent {
+    background-color: #282828;
+    text-color:       #ebdbb2;
+
+}
+element.alternate.active {
+    background-color: #282828;
+    text-color:       #ebdbb2;
+
+}
+scrollbar {
+    width:        4px ;
+    border:       0;
+    handle-color: #504945;
+    handle-width: 8px ;
+    padding:      0;
+}
+mode-switcher {
+    border:       2px 0px 0px ;
+    border-color: #ebdbb2;
+}
+button {
+    spacing:    0;
+    text-color: #ebdbb2;
+}
+button.selected {
+    background-color: #282828;
+    text-color:       #83a598;
+}
+inputbar {
+    spacing:    2;
+    text-color: #ebdbb2;
+    padding:    1px ;
+}
+case-indicator {
+    spacing:    0;
+    text-color: #ebdbb2;
+}
+entry {
+    spacing:    0;
+    text-color: #ebdbb2;
+}
+prompt {
+    spacing:    0;
+    text-color: #d3869b;
+}
+inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+textbox-prompt-colon {
+    expand:     false;
+    str:        ":";
+    margin:     0px 0.3em 0em 0em ;
+    text-color: #ebdbb2;
+}
+
