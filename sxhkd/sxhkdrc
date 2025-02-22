@@ -1,4 +1,4 @@
-#
+
 # wm independent hotkeys
 #
 
@@ -82,7 +82,7 @@ super + {p,o,comma,period}
 	bspc node -f @{parent,brother,first,second}
 
 # focus the next/previous window in the current desktop
-super + {_,shift + }c
+super + {_,shift + }v
 	bspc node -f {next,prev}.local.!hidden.window
 
 # focus the next/previous desktop in the current monitor
@@ -144,11 +144,13 @@ super + {Left,Down,Up,Right}
 
 # Multimedia keys
 XF86AudioRaiseVolume
-  amixer -q set Master 5%+ unmute
+   amixer -D pulse sset Master 5%+ unmute
+#  amixer -q set Master 5%+ unmute
 
 # Still multimedia
 XF86AudioLowerVolume
-  amixer -q set Master 5%- unmute
+   amixer -D pulse sset Master 5%- unmute
+#  amixer -q set Master 5%- unmute
 
 # still
 XF86AudioMute
@@ -177,7 +179,7 @@ XF86MonBrightnessDown
 
 # Mute Mic
 XF86AudioMicMute
-  amixer set Capture toggle
+  amixer -D pulse sset Capture toggle
 
 # Screenshot
 Print
@@ -208,8 +210,11 @@ XF86AudioPrev
 
 
 # Shortcuts
-super + w 
-  brave
+super + w
+  google-chrome-stable
+
+super + e
+  firefox
 
 super + n 
   thunar  
@@ -224,8 +229,13 @@ super + s
   spotify adblock
 
 super + b
-  #burp
-  java -jar ~/Tools/burpsuite_pro_v2023.2.2/Loader.jar
+  cd ~/Tools/burpsuite_pro_v2024.11.2 && java -jar burploader.jar
 
-super + o
+super + a
   zaproxy
+
+super + alt + b
+  bspc wm -r
+
+super + c
+  ~/Cyberfox/Cyberfox

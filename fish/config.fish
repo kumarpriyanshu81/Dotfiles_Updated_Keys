@@ -33,7 +33,8 @@ alias p='pipes.sh'
 alias r='ranger'
 alias se='sudoedit'
 alias msf='msfconsole'
-alias burp='java -jar ~/Tools/burpsuite_pro_v2023.2.2/Loader.jar'
+alias burp='cd ~/Tools/burpsuite_pro_v2024.11.2 && java -jar burploader.jar'
+alias pass='cat ~/Documents/h1.txt'
 
 # Pacman and Yay
 alias pacsyu='sudo pacman -Syu'                  # update only standard pkgs
@@ -71,9 +72,24 @@ alias nudp="nmap -sU --top-ports " # Scans top most used ports in an IP.
 # OpenVPNs
 alias THM='sudo openvpn /home/luc1fer/Documents/Open_VPN/THM.ovpn'
 alias HTB='sudo openvpn /home/luc1fer/Documents/Open_VPN/HTB_Machines.ovpn'
+alias HTBA='sudo openvpn /home/luc1fer/Documents/Open_VPN/HTB_Academy.ovpn'
 
 # Starship Prompt For ~/.config/fish/config.fish
+
+# File alias
+alias h1='cd ~/Documents/h1'
+alias bug='cd ~/Documents/bugcrowd'
+alias hack='cd ~/Documents/yeswehack'
+alias wordlists='cd ~/Documents/wordlists'
+alias hosts='sudo nvim /etc/hosts'
+alias exp='cd ~/Documents/exploits'
+alias Tools='cd ~/Tools'
 
 starship init fish | source
 
 figlet -f Banner3 Luc1fer | lolcat
+
+set -gx JAVA_HOME /usr/lib/jvm/jdk-14
+set -gx PATH $PATH $JAVA_HOME/bin
+
+

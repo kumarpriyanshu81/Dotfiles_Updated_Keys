@@ -1,0 +1,73 @@
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.bright]
+black = "0x928374"
+blue = "0x7daea3"
+cyan = "0x89b482"
+green = "0xa9b665"
+magenta = "0xd3869b"
+red = "0xea6962"
+white = "0xdfbf8e"
+yellow = "0xe3a84e"
+
+[colors.normal]
+black = "0x665c54"
+blue = "0x7daea3"
+cyan = "0x89b482"
+green = "0xa9b665"
+magenta = "0xd3869b"
+red = "0xea6962"
+white = "0xdfbf8e"
+yellow = "0xe78a4e"
+
+[colors.primary]
+background = "0x282828"
+foreground = "0xdfbf8e"
+
+[font]
+size = 7
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "BoldItalic"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "MediumItalic"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Medium"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "Return"
+mods = "Super|Shift"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[selection]
+save_to_clipboard = false
+
+[terminal.shell]
+program = "/usr/bin/fish"
+
+[window]
+opacity = 0.8
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.padding]
+x = 5
+y = 5
+
+[terminal]
